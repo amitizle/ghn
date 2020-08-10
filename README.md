@@ -1,4 +1,4 @@
-# GHN - GIthub notifications
+# GHN - GitHub notifications
 
 ## What is this?
 
