@@ -10,6 +10,7 @@ import (
 type Config struct {
 	Notifiers []*notifierInstace `yaml:"notifiers"`
 	Log       *LogConfig         `yaml:"log"`
+	Github    *GithubConfig      `yaml:"github"`
 }
 
 type notifierInstace struct {
@@ -23,6 +24,12 @@ type notifierInstace struct {
 // LogConfig contains the configuration for the logger, e.g. level
 type LogConfig struct {
 	Level string `yaml:"level"`
+}
+
+// GithubConfig represents the configuration for Github.
+// In particular, it includes the oauth token
+type GithubConfig struct {
+	Token string `yaml:"string"`
 }
 
 func init() {
